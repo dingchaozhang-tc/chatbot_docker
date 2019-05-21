@@ -52,7 +52,7 @@ docker container prune
 Tt's time to create our own. Our goal in this section will be to create an image that sandboxes a simple Flask application.  go ahead and clone the repository locally like so -
 ```
 COMPLETE ME
-git clone git@github.com:dingchaozhang-tc/docker_demo.git
+git clone git@github.com:dingchaozhang-tc/chatbot_docker.git
 cd chatbot_docker/chatbot-master
 ```
 The next step now is to create an image with this web app. We are going to use the python:3-onbuild version of the python image. These images include multiple ONBUILD triggers, which should be all you need to bootstrap most applications. The build will COPY a requirements.txt file, RUN pip install on said file, and then copy the current directory into /usr/src/app.
