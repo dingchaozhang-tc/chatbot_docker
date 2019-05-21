@@ -51,7 +51,6 @@ docker container prune
 # Our First Image
 Tt's time to create our own. Our goal in this section will be to create an image that sandboxes a simple Flask application.  go ahead and clone the repository locally like so -
 ```
-COMPLETE ME
 git clone git@github.com:dingchaozhang-tc/chatbot_docker.git
 cd chatbot_docker/chatbot-master
 ```
