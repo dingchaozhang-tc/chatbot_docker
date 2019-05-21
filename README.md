@@ -107,7 +107,7 @@ docker push dingchao/chatbot
 Now that your image is online, anyone who has docker installed can play with your app by typing just a single command.
 - Go to EC2 in AWS, configuring inboud ports in security group:
 Go to the "Network & Security" -> Security Group settings in the left hand navigation,find the Security Group that your instance is apart of Click on Inbound Rules,u se the drop down and add HTTP (port 80). 
-and also choose the right VPC group:vpc-082e7fb283b5063e1 used in this demo in developer_qa environment.
+and also choose the right VPC group used in this demo in developer_qa environment.
 First we install docker on EC2:
 ```
 sudo apt install docker.io
