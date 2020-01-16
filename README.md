@@ -107,9 +107,23 @@ Now that your image is online, anyone who has docker installed can play with you
 - Go to EC2 in AWS, configuring inboud ports in security group:
 Go to the "Network & Security" -> Security Group settings in the left hand navigation,find the Security Group that your instance is apart of Click on Inbound Rules,u se the drop down and add HTTP (port 80). 
 and also choose the right VPC group used in this demo in developer_qa environment.
-First we install docker on EC2:
+Follow the next steps to install docker assuing using AWS LINUX AMI:
+- Update the installed packages and package cache on your instance.
+
 ```
-sudo apt install docker.io
+sudo yum update -y
+```
+- install docker
+```
+sudo yum -y install docker
+```
+Start docker service
+```
+sudo service docker start
+```
+Verify docker is on
+```
+sudo docker info
 ```
 If you’re using a different Linux distribution other than Ubuntu, you may need different installation command line.
 Once docker is installed, run the following command to start the app.
